@@ -1,2 +1,1 @@
-import "./style.css"
-alert('let\'s start');
+import "./style.scss"
