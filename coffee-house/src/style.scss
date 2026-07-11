@@ -1,8 +1,10 @@
 @use '../node_modules/modern-normalize/modern-normalize.css';
 @use './assets/scss/basic/basic.scss';
 
+//mixin
+@use './assets/scss/mixins/typography.scss' as *;
 
 .twenty {
-  font-size: 50px;
+  @include heading-1;
 }
 

@@ -1,0 +1,64 @@
+//Typography [Mobile]
+
+@mixin heading-1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 115%;
+  @media screen and (min-width: 768px) {
+    font-size: 72px;
+    line-height: 105%;
+  }
+}
+
+@mixin heading-1_accent {
+  @include heading-1;
+  font-style: italic;
+}
+
+@mixin heading-2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+@mixin heading-2_accent {
+  @include heading-2;
+  font-style: italic;
+}
+
+//Typography [all devices]
+@mixin heading-3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+//Body
+@mixin medium {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@mixin caption {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+//Action
+
+@mixin link-and-button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@mixin burger-link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
