@@ -39,12 +39,21 @@ html {
 }
 
 body {
+  padding-top: 20px;
   background-color: $background-body;
 }
 
+
 .container {
   margin: 0 auto;
-  max-width: 688px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
 }
 
 

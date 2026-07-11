@@ -1,0 +1,40 @@
+@use '../basic/variables.scss' as *;
+
+@mixin burger-line {
+  content: '';
+  width: 18px;
+  border: 1px $text-dark solid ;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px $border-dark solid;
+
+  &::after {
+    @include burger-line;
+  }
+
+  &::before {
+    @include burger-line;
+  }
+
+  &:hover{
+    &::after {
+      transform: translateY(-4.75px) rotate(45deg);
+    }
+    &::before {
+      transform: translateY(4.75px) rotate(-45deg);
+    }
+  }
+}

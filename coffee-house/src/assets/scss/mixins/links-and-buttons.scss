@@ -1,0 +1,67 @@
+@use './typography.scss' as *;
+@use '../basic/variables.scss' as *;
+
+
+@mixin menu-item {
+  @include link-and-button;
+  display: flex;
+  flex-direction: column;
+  color: $text-dark;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: $text-dark;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    transition: 2s;
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@mixin tab-item {
+
+}
+
+@mixin button-primary {
+
+}
+
+@mixin button-secondary {
+
+}
+
+@mixin button-app-store {
+
+}
+
+@mixin button-google-play {
+
+}
+
+@mixin button-google-play {
+
+}
+
+@mixin button-icon-dark {
+
+}
+
+@mixin button-icon-light {
+
+}
+
+@mixin button-icon-burger {
+
+}
+
+@mixin link-contact {
+
+}

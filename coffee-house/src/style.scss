@@ -1,10 +1,9 @@
+//basic
 @use '../node_modules/modern-normalize/modern-normalize.css';
 @use './assets/scss/basic/basic.scss';
 
-//mixin
-@use './assets/scss/mixins/typography.scss' as *;
+//components
+@use 'assets/scss/components/burger';
 
-.twenty {
-  @include heading-1;
-}
-
+//sections
+@use './assets/scss/sections/header.scss';

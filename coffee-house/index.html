@@ -1,18 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <title>Coffee House</title>
-  </head>
-  <body>
-  <h1 class="twenty">
-    Privet
-  </h1>
-    <script type="module" src="./src/index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/favicon.ico"
+  >
+  <title>Coffee House</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="logo">
+        <a href="/">
+          <img
+            src="src/assets/icons/Resource.svg"
+            alt="logo"
+            width="100"
+            height="60"
+            loading="lazy"
+          >
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul role="list">
+          <li class="header__nav__elem">
+            <a href="">Favorite coffee</a>
+          </li>
+          <li class="header__nav__elem">
+            <a href="">About</a>
+          </li>
+          <li class="header__nav__elem">
+            <a href="">Mobile app</a>
+          </li>
+          <li class="header__nav__elem">
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger">
+
+      </div>
+      <div class="header__menu">
+        <a href="./menu" class="header__menu__wrapper">
+          <p class="header__menu__text">Menu</p>
+          <img
+            class="header__menu__icon"
+            src="src/assets/icons/coffee-cup.svg"
+            alt="coffee-cup"
+            width="20"
+            height="20"
+            loading="lazy"
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+
+</main>
+<footer class="footer">
+
+</footer>
+<script
+  type="module"
+  src="./src/index.js"
+></script>
+</body>
 </html>

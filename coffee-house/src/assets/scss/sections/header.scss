@@ -1,0 +1,50 @@
+@use '../mixins/links-and-buttons' as *;
+@use '../mixins/typography' as *;
+@use '../basic/variables.scss' as *;
+
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+
+    &__nav {
+      display: block;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+      }
+
+      &__elem {
+        @include menu-item;
+      }
+    }
+
+    .burger {
+      display: none;
+    }
+
+    &__menu {
+      @include menu-item;
+
+      &__wrapper {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+}

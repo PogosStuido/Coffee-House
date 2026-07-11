@@ -1,3 +1,5 @@
+@use '../basic/variables.scss' as *;
+
 //Typography [Mobile]
 
 @mixin heading-1 {
@@ -55,6 +57,12 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
+  color: $text-dark;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @mixin burger-link {
