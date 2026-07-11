@@ -230,6 +230,12 @@ body {
     padding: 0 2.5rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0;
+    width: 85rem;
+  }
+}
 .burger {
   display: flex;
   flex-direction: column;
